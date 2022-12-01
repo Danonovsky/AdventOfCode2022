@@ -11,4 +11,4 @@ foreach (var line in lines)
     }
     currentCalories += int.Parse(line);
 }
-Console.WriteLine(calories.Max());
+Console.WriteLine(calories.OrderByDescending(x => x).Take(3).Sum());
