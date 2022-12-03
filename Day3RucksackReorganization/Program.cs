@@ -1,11 +1,14 @@
 ﻿var lines = File.ReadLines("input.txt");
 var score = 0;
 var dictionary = new Dictionary<char, int>();
+var foundChars = new List<char>();
 var i = 1;
 foreach (var line in lines)
 {
     foreach (var character in line)
     {
+        if(foundChars.Contains(character)) continue;
+        foundChars.Add(character);
         if (dictionary.ContainsKey(character) is false)
         {
             dictionary.Add(character,1);
@@ -17,6 +20,7 @@ foreach (var line in lines)
         dictionary[character]=value;
     }
     i++;
+    foundChars.Clear();
     if (i == 4)
     {
         var character = dictionary.Where(_ => _.Value == 3).Select(_ => _.Key).FirstOrDefault();
@@ -27,5 +31,5 @@ foreach (var line in lines)
         dictionary.Clear();
     }
 }
-Console.WriteLine(score);
+Console.WriteLine(score);//2697
 
