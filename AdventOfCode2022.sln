@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1CalorieCounting", "Day1CalorieCounting\Day1CalorieCounting.csproj", "{BBD277B3-267E-41C0-8B35-004FF5DDF232}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2RockPaperScissors", "Day2RockPaperScissors\Day2RockPaperScissors.csproj", "{49D95119-0788-4998-9349-E875B29BF5D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day3RucksackReorganization", "Day3RucksackReorganization\Day3RucksackReorganization.csproj", "{7A61AA16-4A5C-42B7-B555-267CC24A4417}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +21,9 @@ Global
 		{49D95119-0788-4998-9349-E875B29BF5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49D95119-0788-4998-9349-E875B29BF5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49D95119-0788-4998-9349-E875B29BF5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A61AA16-4A5C-42B7-B555-267CC24A4417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A61AA16-4A5C-42B7-B555-267CC24A4417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A61AA16-4A5C-42B7-B555-267CC24A4417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A61AA16-4A5C-42B7-B555-267CC24A4417}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
