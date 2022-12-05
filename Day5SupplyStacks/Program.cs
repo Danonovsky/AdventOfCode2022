@@ -31,9 +31,15 @@ for (var i = stacksAmountIndex+2; i < lines.Length; i++)
     var amount = int.Parse(lineElements[1]);
     var source = int.Parse(lineElements[3]) - 1;
     var destination = int.Parse(lineElements[5]) - 1;
+    var tempStack = new Stack<char>();
     for (var j = 0; j < amount; j++)
     {
         var peek = stacks[source].Pop();
+        tempStack.Push(peek);
+    }
+    for (var j = 0; j < amount; j++)
+    {
+        var peek = tempStack.Pop();
         stacks[destination].Push(peek);
     }
 }
